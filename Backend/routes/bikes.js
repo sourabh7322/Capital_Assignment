@@ -1,10 +1,10 @@
 const express = require('express');
-const router = express.Router();
+const Bikerouter = express.Router();
 const Bike = require('../models/Bike');
 const auth = require('../middleware/auth');
 
 // Create a new bike
-router.post('/', auth, async (req, res) => {
+Bikerouter.post('/', auth, async (req, res) => {
     try {
         const newBike = new Bike({ ...req.body, userId: req.user.id });
         const bike = await newBike.save();
@@ -15,7 +15,7 @@ router.post('/', auth, async (req, res) => {
 });
 
 // Get all unsold bikes
-router.get('/', async (req, res) => {
+Bikerouter.get('/', async (req, res) => {
     try {
         const bikes = await Bike.find({ status: 'unsold' });
         res.json(bikes);
@@ -25,7 +25,7 @@ router.get('/', async (req, res) => {
 });
 
 // Get user-specific bikes
-router.get('/user', auth, async (req, res) => {
+Bikerouter.get('/user', auth, async (req, res) => {
     try {
         const bikes = await Bike.find({ userId: req.user.id });
         res.json(bikes);
@@ -34,4 +34,4 @@ router.get('/user', auth, async (req, res) => {
     }
 });
 
-module.exports = router;
+module.exports = Bikerouter;

@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { useSearch } from '../context/SearchContext'; // Adjust path if necessary
+import { useSearch } from '../context/SearchContext'; 
 
 function Navbar() {
   const { query, setQuery } = useSearch();
@@ -24,7 +24,7 @@ function Navbar() {
         <li><Link to="/items">Items</Link></li>
         <li>
           <form onSubmit={handleSearch} style={{ display: 'flex', alignItems: 'center' }}>
-            <label htmlFor="search" style={{ marginRight: '8px' }}>Search:</label>
+            {/* <label htmlFor="search" style={{ marginRight: '8px' }}>Search:</label> */}
             <input
               id="search"
               type="text"

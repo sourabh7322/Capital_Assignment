@@ -22,10 +22,21 @@ function Houses() {
       <div>
         {houses.map(house => (
           <div key={house._id}>
-            <h3>{house.productName}</h3>
+            <h3>{house.sellerName}</h3>
+            <img src={house.image[0]} alt="House" width="200" />
             <p>{house.description}</p>
             <p>Price: ${house.price}</p>
-            <img src={house.productImages[0]} alt={house.productName} width="200" />
+            <p>Address: {house.address}</p>
+            <p>Post Date: {house.postDate}</p>
+            <p>Member Since: {house.memberSince}</p>
+            <p>Phone: {house.phone}</p>
+            <p>State: {house.state}</p>
+            <p>Bathrooms: {house.bathrooms}</p>
+            <p>Bedrooms: {house.bedrooms}</p>
+            <p>Furnished: {house.furnished}</p>
+            <p>Category: {house.category}</p>
+            <p>Floor: {house.floor}</p>
+            <p>Car Parking: {house.carParking}</p>
           </div>
         ))}
       </div>

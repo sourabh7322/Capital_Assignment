@@ -1,3 +1,5 @@
+// app.js
+
 const express = require('express');
 const mongoose = require('mongoose');
 const dotenv = require('dotenv');
@@ -13,6 +15,8 @@ const laptopRoutes = require('./routes/laptops');
 const mobileRoutes = require('./routes/mobiles');
 const userRoutes = require('./routes/userRoutes');
 const searchRoutes = require('./routes/search');
+const itemRoutes = require('./routes/itemRoutes'); // Add this line
+
 const app = express();
 
 app.use(cors());
@@ -30,6 +34,7 @@ app.use('/api/laptops', laptopRoutes);
 app.use('/api/mobiles', mobileRoutes);
 app.use('/api/user', userRoutes);
 app.use('/api/search', searchRoutes);
+app.use('/api/items', itemRoutes); // Add this line
 
 const PORT = process.env.PORT || 5000;
 
