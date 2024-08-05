@@ -9,6 +9,7 @@ const router = express.Router();
 // @route    POST api/auth/register
 // @desc     Register user
 // @access   Public
+
 router.post(
     '/register',
     [

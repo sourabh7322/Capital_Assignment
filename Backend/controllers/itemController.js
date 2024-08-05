@@ -1,5 +1,3 @@
-// controllers/itemController.js
-
 const Item = require('../models/Item');
 
 exports.createItem = async (req, res) => {
@@ -13,7 +11,6 @@ exports.createItem = async (req, res) => {
         });
 
         const item = await newItem.save();
-
         res.json(item);
     } catch (error) {
         res.status(500).send('Server error');
@@ -22,7 +19,8 @@ exports.createItem = async (req, res) => {
 
 exports.getItems = async (req, res) => {
     try {
-        const items = await Item.find({ status: 'unsold' });
+        const status = req.query.status || 'unsold';
+        const items = await Item.find({ status });
         res.json(items);
     } catch (error) {
         res.status(500).send('Server error');
