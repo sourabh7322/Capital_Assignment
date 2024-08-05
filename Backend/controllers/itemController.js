@@ -1,13 +1,16 @@
 const Item = require('../models/Item');
 
 exports.createItem = async (req, res) => {
-    const { name, price } = req.body;
+    const { name, price, productImages, description, location } = req.body;
 
     try {
         const newItem = new Item({
             name,
             price,
             seller: req.user.id,
+            productImages,
+            description,
+            location,
         });
 
         const item = await newItem.save();

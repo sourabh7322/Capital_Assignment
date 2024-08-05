@@ -13,7 +13,7 @@
     {
         "name": "BMW X3",
         "price": 2990000,
-        "status": "unsold",
+        "status": "sold",
         "seller": "60d21b4667d0d8992e610c86",
         "productImages": [
             "https://picjj.com/images/2024/08/04/W11CIb.webp"
@@ -24,7 +24,7 @@
     {
         "name": "2 BHK Flat for Rent",
         "price": 38000,
-        "status": "unsold",
+        "status": "sold",
         "seller": "60d21b4667d0d8992e610c87",
         "productImages": [
             "https://picjj.com/images/2024/08/04/W11v7e.jpg"
@@ -79,7 +79,7 @@
     {
         "name": "Samsung Galaxy S21 Ultra",
         "price": 105000,
-        "status": "unsold",
+        "status": "sold",
         "seller": "60d21b4667d0d8992e610c92",
         "productImages": [
             "https://picjj.com/images/2024/08/05/W1AzdN.jpg"
@@ -137,7 +137,7 @@
         "status": "unsold",
         "seller": "60d21b4667d0d8992e610c97",
         "productImages": [
-            "https://example.com/images/ps5.jpg"
+            "https://picjj.com/images/2024/08/05/W1iqS3.webp"
         ],
         "description": "Core i5 processor, Hdd 320GB, Warranty available, graphics card, call for best price",
         "location": "Mumbai, Maharashtra, India"
@@ -156,7 +156,7 @@
     {
         "name": "VolksWagen Vento",
         "price":  2375000,
-        "status": "unsold",
+        "status": "sold",
         "seller": "60d21b4667d0d8992e610c99",
         "productImages": [
             "https://picjj.com/images/2024/08/04/W11Xyk.webp"

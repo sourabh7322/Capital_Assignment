@@ -19,6 +19,15 @@ const ItemSchema = new mongoose.Schema({
         ref: 'User',
         required: true,
     },
+    productImages: [{
+        type: String,
+    }],
+    description: {
+        type: String,
+    },
+    location: {
+        type: String,
+    }
 });
 
 const Item = mongoose.model('Item', ItemSchema);
