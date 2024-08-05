@@ -7,7 +7,7 @@ function Items() {
   useEffect(() => {
     const fetchItems = async () => {
       try {
-        const response = await axios.get('http://localhost:5050/api/items');
+        const response = await axios.get('https://capital-assignment-3.onrender.com/api/items');
         setItems(response.data);
       } catch (err) {
         console.error(err);

@@ -1,55 +1,72 @@
 import React, { useState } from 'react';
+import axios from 'axios';
+import { Box, Button, FormControl, FormLabel, Input, VStack, Alert, AlertIcon } from '@chakra-ui/react';
+import { useAuth } from '../context/AuthContext';
 
-function Login({ onLogin }) {
-  const [formData, setFormData] = useState({
-    email: '',
-    password: '',
-  });
+const Login = () => {
+    const [formData, setFormData] = useState({
+        email: '',
+        password: ''
+    });
+    const [loginSuccess, setLoginSuccess] = useState(false);
+    const [error, setError] = useState('');
 
-  const { email, password } = formData;
+    const { login } = useAuth();
+    const { email, password } = formData;
 
-  const handleChange = (e) => {
-    setFormData({ ...formData, [e.target.name]: e.target.value });
-  };
+    const onChange = e => setFormData({ ...formData, [e.target.name]: e.target.value });
 
-  const handleSubmit = async (e) => {
-    e.preventDefault();
+    const onSubmit = async e => {
+        e.preventDefault();
 
-    try {
-      const response = await fetch('http://localhost:5050/api/auth/login', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ email, password }),
-      });
-      const data = await response.json();
+        try {
+            const res = await axios.post('https://capital-assignment-3.onrender.com/api/auth/login', formData);
+            setLoginSuccess(true);
+            setError('');
+            login(); // Update the authentication state
+        } catch (error) {
+            setLoginSuccess(false);
+            setError(error.response?.data?.message || 'Login failed.');
+        }
+    };
 
-      if (response.ok) {
-        // Call onLogin callback with the token
-        onLogin(data.token);
-      } else {
-        alert(`Login failed: ${data.msg}`);
-      }
-    } catch (err) {
-      console.error('Error during login:', err);
-    }
-  };
-
-  return (
-    <div>
-      <h2>Login</h2>
-      <form onSubmit={handleSubmit}>
-        <div>
-          <label htmlFor="email">Email</label>
-          <input type="email" id="email" name="email" value={email} onChange={handleChange} required />
-        </div>
-        <div>
-          <label htmlFor="password">Password</label>
-          <input type="password" id="password" name="password" value={password} onChange={handleChange} required />
-        </div>
-        <button type="submit">Login</button>
-      </form>
-    </div>
-  );
-}
+    return (
+        <Box
+            p={8}
+            maxW="md"
+            mx="auto"
+            mt={8}
+            bg="white"
+            borderRadius="md"
+            boxShadow="md"
+        >
+            <VStack spacing={4} align="stretch">
+                <FormControl id="email" isRequired>
+                    <FormLabel>Email</FormLabel>
+                    <Input type="email" name="email" value={email} onChange={onChange} placeholder="Email" />
+                </FormControl>
+                <FormControl id="password" isRequired>
+                    <FormLabel>Password</FormLabel>
+                    <Input type="password" name="password" value={password} onChange={onChange} placeholder="Password" />
+                </FormControl>
+                <Button colorScheme="teal" onClick={onSubmit}>
+                    Login
+                </Button>
+                {loginSuccess && (
+                    <Alert status="success" mt={4}>
+                        <AlertIcon />
+                        Login successfully
+                    </Alert>
+                )}
+                {error && (
+                    <Alert status="error" mt={4}>
+                        <AlertIcon />
+                        {error}
+                    </Alert>
+                )}
+            </VStack>
+        </Box>
+    );
+};
 
 export default Login;

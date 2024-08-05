@@ -9,13 +9,12 @@ const router = express.Router();
 // @route    POST api/auth/register
 // @desc     Register user
 // @access   Public
-
 router.post(
     '/register',
     [
         check('username', 'Username is required').not().isEmpty(),
         check('email', 'Please include a valid email').isEmail(),
-        check('password', 'Please enter a password with 6 or more characters').isLength({ min: 6 }),
+        check('password', 'Please enter a password with 3 or more characters').isLength({ min: 3 }),
     ],
     async (req, res) => {
         const errors = validationResult(req);
@@ -65,8 +64,6 @@ router.post(
     }
 );
 
-
-
 // @route    POST api/auth/login
 // @desc     Authenticate user & get token
 // @access   Public
@@ -110,7 +107,6 @@ router.post(
                 (err, token) => {
                     if (err) throw err;
                     res.json({ token });
-                    console.log("User Register")
                 }
             );
         } catch (err) {
