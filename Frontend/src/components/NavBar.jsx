@@ -1,6 +1,6 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { Box, Flex, Link as ChakraLink, Input, IconButton, useBreakpointValue, Button } from '@chakra-ui/react';
+import { Box, Flex, Link as ChakraLink, Input, IconButton, useBreakpointValue, Button, Select } from '@chakra-ui/react';
 import { SearchIcon } from '@chakra-ui/icons';
 import { useSearch } from '../context/SearchContext';
 import { useAuth } from '../context/AuthContext';
@@ -8,12 +8,13 @@ import { useAuth } from '../context/AuthContext';
 function Navbar() {
     const { query, setQuery } = useSearch();
     const { isAuthenticated, logout } = useAuth();
+    const [filter, setFilter] = useState('all'); // New state for filter
     const isMobile = useBreakpointValue({ base: true, md: false });
 
     const handleSearch = (e) => {
         e.preventDefault();
         console.log('Search query:', query);
-        window.location.href = `/search?query=${encodeURIComponent(query)}`;
+        window.location.href = `/search?query=${encodeURIComponent(query)}&filter=${filter}`;
     };
 
     return (
@@ -83,6 +84,21 @@ function Navbar() {
                             size="md"
                             mr={2}
                         />
+                        {isAuthenticated && ( // Conditional rendering of the filter
+                            <Select
+                                value={filter}
+                                onChange={(e) => setFilter(e.target.value)}
+                                bg="white"
+                                color="gray.800"
+                                borderRadius="md"
+                                size="md"
+                                mr={2}
+                            >
+                                <option value="all">All</option>
+                                <option value="sold">Sold</option>
+                                <option value="unsold">Unsold</option>
+                            </Select>
+                        )}
                         <IconButton
                             type="submit"
                             icon={<SearchIcon />}

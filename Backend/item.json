@@ -1,277 +1,254 @@
 [
     {
-        "productImages": [
-            "https://picjj.com/images/2024/08/04/W11HHr.webp"
-        ],
         "name": "Benalli TNT 25",
         "price": 149000,
         "status": "unsold",
         "seller": "60d21b4667d0d8992e610c85",
-        
+        "productImages": [
+            "https://picjj.com/images/2024/08/04/W11HHr.webp"
+        ],
         "description": "Benalli TNT 25 - well maintained and less used. Stable and smooth to ride. Only super bike which can be used for short and long distance.",
         "location": "Feroke, Kozhikode, Kerala"
     },
     {
-        "productImages": [
-            "https://picjj.com/images/2024/08/04/W11CIb.webp"
-        ],
         "name": "BMW X3",
         "price": 2990000,
         "status": "sold",
         "seller": "60d21b4667d0d8992e610c86",
-        
+        "productImages": [
+            "https://picjj.com/images/2024/08/04/W11CIb.webp"
+        ],
         "description": "Sensors, Power steering, Rear Parking Camera, Sunroof, USB Compatibility, Comprehensive insurance valid, Superior leather seat covers",
         "location": "Pune, Maharashtra, India"
     },
     {
-        "productImages": [
-            "https://picjj.com/images/2024/08/04/W11v7e.jpg"
-        ],
         "name": "2 BHK Flat for Rent",
         "price": 38000,
         "status": "sold",
         "seller": "60d21b4667d0d8992e610c87",
-        
+        "productImages": [
+            "https://picjj.com/images/2024/08/04/W11v7e.jpg"
+        ],
         "description": "Newly constructed 2 bhk flat, 2 big size bed rooms facing east, 1 semi modular kitchen, 2 bathrooms, large balcony, drawing room with walk ceiling and many things.",
         "location": "Pitampura, Delhi, Delhi"
     },
     {
-        "productImages": [
-            "https://picjj.com/images/2024/08/04/W1Xhw3.webp"
-        ],
         "name": "Dell Laptop",
         "price": 17000,
         "status": "unsold",
         "seller": "60d21b4667d0d8992e610c88",
-        
+        "productImages": [
+            "https://picjj.com/images/2024/08/04/W1Xhw3.webp"
+        ],
         "description": "Core i5 processor, HDD 320GB, Warranty available, graphics card, call for best price",
         "location": "Magarpatta, Pune"
     },
-    { 
-        "productImages": [
-        "https://picjj.com/images/2024/08/04/W1XBDP.jpg"
-         ],
+    {
         "name": "iPhone 11 Pro Max",
         "price": 64999,
         "status": "unsold",
         "seller": "60d21b4667d0d8992e610c89",
-       
+        "productImages": [
+            "https://picjj.com/images/2024/08/04/W1XBDP.jpg"
+        ],
         "description": "Excellent condition phone with no scratch or any spot. Well-maintained only 1 year and 1 month old",
         "location": "Chandralayam, Mattannur, Kerala"
     },
     {
-        "productImages": [
-            "https://picjj.com/images/2024/08/05/W1AgTP.jpg"
-        ],
         "name": "Sony WH-1000XM4",
         "price": 29999,
         "status": "unsold",
         "seller": "60d21b4667d0d8992e610c90",
-        
+        "productImages": [
+            "https://picjj.com/images/2024/08/05/W1AgTP.jpg"
+        ],
         "description": "Noise-cancelling headphones with exceptional sound quality and long battery life.",
         "location": "Mumbai, Maharashtra, India"
     },
     {
-        "productImages": [
-            "https://picjj.com/images/2024/08/05/W1AtUz.jpg"
-        ],
         "name": "Apple MacBook Pro 16\"",
         "price": 239999,
         "status": "unsold",
         "seller": "60d21b4667d0d8992e610c91",
-       
+        "productImages": [
+            "https://picjj.com/images/2024/08/05/W1AtUz.jpg"
+        ],
         "description": "Powerful laptop with M1 Pro chip, 16GB RAM, 512GB SSD, and Retina display.",
         "location": "Delhi, Delhi, India"
     },
     {
-        "productImages": [
-            "https://picjj.com/images/2024/08/05/W1AzdN.jpg"
-        ],
         "name": "Samsung Galaxy S21 Ultra",
         "price": 105000,
         "status": "sold",
         "seller": "60d21b4667d0d8992e610c92",
-       
+        "productImages": [
+            "https://picjj.com/images/2024/08/05/W1AzdN.jpg"
+        ],
         "description": "Flagship smartphone with 108MP camera, 12GB RAM, and 5000mAh battery.",
         "location": "Bangalore, Karnataka, India"
     },
     {
-        "productImages": [
-            "https://picjj.com/images/2024/08/05/W1AAnT.jpg"
-        ],
         "name": "samsung galaxy s23 ultra",
         "price": 12000,
         "status": "unsold",
         "seller": "60d21b4667d0d8992e610c93",
-        
+        "productImages": [
+            "https://picjj.com/images/2024/08/05/W1AAnT.jpg"
+        ],
         "description": "Stylish and comfortable phone with a unique design and with 108MP camera, 12GB RAM, 5000mAh battery.",
         "location": "Chennai, Tamil Nadu, India"
     },
     {
-        "productImages": [
-            "https://picjj.com/images/2024/08/05/W1KZg3.webp"
-        ],
         "name": "Mahindra XUV 3XO\"",
         "price": 7900000,
         "status": "unsold",
         "seller": "60d21b4667d0d8992e610c94",
-       
+        "productImages": [
+            "https://picjj.com/images/2024/08/05/W1KZg3.webp"
+        ],
         "description": " It gives a mileage of 18.89 kmpl. Mahindra XUV 3XO MX1 1.2 L Petrol is available in Manual transmission and offered in 7 colours: Stealth Black, Nebula Blue, Galaxy Grey, Deep Forest, Dune Beige, Tango Red and Everest White.",
         "location": "Hyderabad, Telangana, India"
     },
     {
-        "productImages": [
-            "https://picjj.com/images/2024/08/04/W11acB.webp"
-        ],
         "name": "Yamaha R15",
         "price":85000,
         "status": "unsold",
         "seller": "60d21b4667d0d8992e610c95",
-        
+        "productImages": [
+            "https://picjj.com/images/2024/08/04/W11acB.webp"
+        ],
         "description": "R15 bike fully modified and working super fast.",
         "location": "Kolkata, West Bengal, India"
     },
     {
-        "productImages": [
-            "https://picjj.com/images/2024/08/04/W11CIb.webp"
-        ],
         "name": "BMW X3",
         "price":2990000,
         "status": "unsold",
         "seller": "60d21b4667d0d8992e610c96",
-       
+        "productImages": [
+            "https://picjj.com/images/2024/08/04/W11CIb.webp"
+        ],
         "description": "Sensors,Power steering,Rear Parking Camera,Sunroof,USB Compatibility,Comprehensive insurance valid,Superior leather seat covers",
         "location": "Pune, Maharashtra, India"
     },
     {
-        "productImages": [
-            "https://picjj.com/images/2024/08/05/W1iqS3.webp"
-        ],
         "name": "Dell laptop ",
         "price":  17000,
         "status": "unsold",
         "seller": "60d21b4667d0d8992e610c97",
-       
+        "productImages": [
+            "https://picjj.com/images/2024/08/05/W1iqS3.webp"
+        ],
         "description": "Core i5 processor, Hdd 320GB, Warranty available, graphics card, call for best price",
         "location": "Mumbai, Maharashtra, India"
     },
     {
-        "productImages": [
-            "https://picjj.com/images/2024/08/04/W11PIs.jpeg"
-        ],
         "name": "Pulser 150cc",
         "price": 32000,
         "status": "unsold",
         "seller": "60d21b4667d0d8992e610c98",
-       
+        "productImages": [
+            "https://picjj.com/images/2024/08/04/W11PIs.jpeg"
+        ],
         "description": "Recently serviced, Less used,New brand rear tyre,No issues in bike",
         "location": "Delhi, Delhi, India"
     },
     {
-        "productImages": [
-            "https://picjj.com/images/2024/08/04/W11Xyk.webp"
-        ],
         "name": "VolksWagen Vento",
         "price":  2375000,
         "status": "sold",
         "seller": "60d21b4667d0d8992e610c99",
-       
+        "productImages": [
+            "https://picjj.com/images/2024/08/04/W11Xyk.webp"
+        ],
         "description": "Adjustable External Mirror,Alloy Wheels,Aux Compatibility, perfect condition, used only for a week, buy it.",
         "location": "Chennai, Tamil Nadu, India"
     },
     {
-        "productImages": [
-            "https://picjj.com/images/2024/08/04/W11CIb.webp"
-        ],
         "name": "BMW X3",
         "price": 2990000,
         "status": "unsold",
         "seller": "60d21b4667d0d8992e610c9a",
-        
+        "productImages": [
+            "https://picjj.com/images/2024/08/04/W11CIb.webp"
+        ],
         "description": "Sensors,Power steering,Rear Parking Camera,Sunroof,USB Compatibility,Comprehensive insurance valid,Superior leather seat covers",
         "location": "Pune, Maharashtra, India"
     },
     {
-        "productImages": [
-            "https://picjj.com/images/2024/08/05/W1KPNs.jpg"
-        ],
         "name": "Google Pixel 6",
         "price": 49900,
         "status": "unsold",
         "seller": "60d21b4667d0d8992e610c9b",
-        
+        "productImages": [
+            "https://picjj.com/images/2024/08/05/W1KPNs.jpg"
+        ],
         "description": "Smartphone with Google's latest features, including an advanced camera system.",
         "location": "Hyderabad, Telangana, India"
     },
     {
-        "productImages": [
-            "https://picjj.com/images/2024/08/05/W1KMKq.jpg"
-        ],
         "name": "MacBook Air M1",
         "price": 99999,
         "status": "unsold",
         "seller": "60d21b4667d0d8992e610c9c",
-        
+        "productImages": [
+            "https://picjj.com/images/2024/08/05/W1KMKq.jpg"
+        ],
         "description": "Lightweight laptop with Apple's M1 chip, 8GB RAM, and 256GB SSD.",
         "location": "Kolkata, West Bengal, India"
     },
     {
-        "productImages": [
-            "https://picjj.com/images/2024/08/05/W1KHer.jpg"
-        ],
         "name": "Samsung Galaxy Watch 4",
         "price": 25999,
         "status": "unsold",
         "seller": "60d21b4667d0d8992e610c9d",
-        
+        "productImages": [
+            "https://picjj.com/images/2024/08/05/W1KHer.jpg"
+        ],
         "description": "Smartwatch with advanced health tracking and long battery life.",
         "location": "Pune, Maharashtra, India"
     },
     {
-        "productImages": [
-            "https://picjj.com/images/2024/08/05/W1K59A.jpg"
-        ],
         "name": "Acer Predator Helios 300",
         "price": 149999,
         "status": "unsold",
         "seller": "60d21b4667d0d8992e610c9e",
-        
+        "productImages": [
+            "https://picjj.com/images/2024/08/05/W1K59A.jpg"
+        ],
         "description": "Gaming laptop with Intel i7 processor, NVIDIA GTX 1660 Ti, and 16GB RAM.",
         "location": "Delhi, Delhi, India"
     },
     {
-        "productImages": [
-            "https://picjj.com/images/2024/08/05/W1Kxwa.jpg"
-        ],
         "name": "Fitbit Charge 5",
         "price": 14999,
         "status": "unsold",
         "seller": "60d21b4667d0d8992e610c9f",
-       
+        "productImages": [
+            "https://picjj.com/images/2024/08/05/W1Kxwa.jpg"
+        ],
         "description": "Fitness tracker with built-in GPS and heart rate monitoring.",
         "location": "Chennai, Tamil Nadu, India"
     },
     {
-        "productImages": [
-            "https://picjj.com/images/2024/08/05/W1KOdk.jpg"
-        ],
         "name": "Dell XPS 13",
         "price": 119999,
         "status": "unsold",
         "seller": "60d21b4667d0d8992e610ca0",
-        
+        "productImages": [
+            "https://picjj.com/images/2024/08/05/W1KOdk.jpg"
+        ],
         "description": "Compact laptop with Intel i7 processor, 16GB RAM, and 512GB SSD.",
         "location": "Bangalore, Karnataka, India"
     },
     {
-        "productImages": [
-            "https://picjj.com/images/2024/08/05/W1KU1e.jpg"
-        ],
         "name": "Sony WH-XB900N",
         "price": 19999,
         "status": "unsold",
         "seller": "60d21b4667d0d8992e610ca1",
-       
+        "productImages": [
+            "https://picjj.com/images/2024/08/05/W1KU1e.jpg"
+        ],
         "description": "Noise-cancelling headphones with deep bass and long battery life.",
         "location": "Hyderabad, Telangana, India"
     }

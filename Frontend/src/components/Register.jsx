@@ -23,6 +23,7 @@ const Register = () => {
 
         try {
             const res = await axios.post('https://capital-assignment-3.onrender.com/api/auth/register', formData);
+            console.log(res);
             setSuccess('Registration successful!');
             setError('');
             toast({
