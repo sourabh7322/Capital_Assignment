@@ -24,7 +24,7 @@ function Items() {
     const fetchItems = async () => {
       try {
         const response = await axios.get('https://capital-assignment-3.onrender.com/api/items', {
-          params: { filter } // Pass filter parameter to API
+          params: filter !== 'all' ? { status: filter } : {}
         });
         setItems(response.data);
       } catch (err) {
@@ -32,7 +32,7 @@ function Items() {
       }
     };
     fetchItems();
-  }, [filter]); // Dependency array includes filter
+  }, [filter]);
 
   const handleFilterChange = (e) => {
     setFilter(e.target.value);
@@ -48,9 +48,8 @@ function Items() {
           value={filter}
           onChange={handleFilterChange}
           width="200px"
-          placeholder="Filter by status"
+          placeholder="Status"
         >
-          <option value="all">All</option>
           <option value="sold">Sold</option>
           <option value="unsold">Unsold</option>
         </Select>

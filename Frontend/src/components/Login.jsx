@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import axios from 'axios';
 import { Box, Button, FormControl, FormLabel, Input, VStack, Alert, AlertIcon } from '@chakra-ui/react';
 import { useAuth } from '../context/AuthContext';
-import { useNavigate } from 'react-router-dom'; // Import useNavigate
+import { useNavigate } from 'react-router-dom';
 
 const Login = () => {
     const [formData, setFormData] = useState({
@@ -14,7 +14,7 @@ const Login = () => {
 
     const { login } = useAuth();
     const { email, password } = formData;
-    const navigate = useNavigate(); // Initialize useNavigate
+    const navigate = useNavigate();
 
     const onChange = e => setFormData({ ...formData, [e.target.name]: e.target.value });
 
@@ -26,7 +26,7 @@ const Login = () => {
             setLoginSuccess(true);
             setError('');
             login(); // Update the authentication state
-            navigate('/'); // Redirect to the home page or Navbar
+            navigate('/'); // Redirect to the items page
         } catch (error) {
             setLoginSuccess(false);
             setError(error.response?.data?.message || 'Login failed.');

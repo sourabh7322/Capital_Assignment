@@ -8,7 +8,7 @@ import { useAuth } from '../context/AuthContext';
 function Navbar() {
     const { query, setQuery } = useSearch();
     const { isAuthenticated, logout } = useAuth();
-    const [filter, setFilter] = useState('all'); // New state for filter
+   // const [filter, setFilter] = useState('all'); // New state for filter
     const isMobile = useBreakpointValue({ base: true, md: false });
 
     const handleSearch = (e) => {
@@ -84,21 +84,9 @@ function Navbar() {
                             size="md"
                             mr={2}
                         />
-                        {isAuthenticated && ( // Conditional rendering of the filter
-                            <Select
-                                value={filter}
-                                onChange={(e) => setFilter(e.target.value)}
-                                bg="white"
-                                color="gray.800"
-                                borderRadius="md"
-                                size="md"
-                                mr={2}
-                            >
-                                <option value="all">All</option>
-                                <option value="sold">Sold</option>
-                                <option value="unsold">Unsold</option>
-                            </Select>
-                        )}
+                        {isAuthenticated // Conditional rendering of the filter
+                          
+                        }
                         <IconButton
                             type="submit"
                             icon={<SearchIcon />}

@@ -22,8 +22,9 @@ exports.createItem = async (req, res) => {
 
 exports.getItems = async (req, res) => {
     try {
-        const status = req.query.status || 'unsold';
-        const items = await Item.find({ status });
+        const status = req.query.status; // Get the status query parameter
+        const query = status ? { status } : {}; // Construct the query based on the status
+        const items = await Item.find(query);
         res.json(items);
     } catch (error) {
         res.status(500).send('Server error');
@@ -38,3 +39,4 @@ exports.getUserItems = async (req, res) => {
         res.status(500).send('Server error');
     }
 };
+

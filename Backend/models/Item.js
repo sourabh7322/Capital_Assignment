@@ -12,7 +12,7 @@ const ItemSchema = new mongoose.Schema({
     status: {
         type: String,
         enum: ['sold', 'unsold'],
-        default: 'unsold',
+       
     },
     seller: {
         type: mongoose.Schema.Types.ObjectId,
